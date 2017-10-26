@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'active_admin_associations/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ActiveAdmin Associations"
+  spec.name          = "active_admin_associations"
   spec.version       = ActiveAdminAssociations::VERSION
   spec.authors       = ["Josh Brody"]
   spec.email         = ["josh@josh.mn"]
