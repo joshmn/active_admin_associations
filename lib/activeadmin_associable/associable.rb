@@ -1,5 +1,5 @@
-module ActiveAdminAssociations
-  class Association
+module ActiveAdminAssociable
+  class Associable
 
     attr_reader :name, :options
     def initialize(name, options = {})
