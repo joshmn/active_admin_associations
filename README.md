@@ -28,6 +28,8 @@ This is pretty opinionated right now.
 
 In a resource file in an ActiveAdmin namespace, open `user.rb` and add `has_many :orders` inside the `register` block. This will create an `action_item` for the show/edit actions that renders a dropdown menu with a link to the Orders associated with the current resource ID. 
 
+Add `association_items` anywhere on the resource page to display the dropdown.
+
 This does not do anything else. It does not mean to do anything else. It doesn't hit ActiveRecord or check to see that your `Order` resource actually exists inside ActiveAdmin. It simply builds a link to the assumed Ransack query URL.
 
 ### Options

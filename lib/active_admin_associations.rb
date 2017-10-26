@@ -9,8 +9,8 @@ module ActiveAdminAssociations
   module Rails
     class Engine < ::Rails::Engine
       config.after_initialize do
-		ActiveAdmin::ResourceDSL.send(:include, ActiveAdminAssociations::ResourceDSL)
-		ActiveAdmin::Resource.send(:include, ActiveAdminAssociations::ActiveAdmin::Resource::Associations)
+        ::ActiveAdmin::ResourceDSL.send(:include, ActiveAdminAssociations::ResourceDSL)
+        ::ActiveAdmin::Resource.send(:include, ActiveAdminAssociations::ActiveAdmin::Resource::Associations)
       end
     end
   end

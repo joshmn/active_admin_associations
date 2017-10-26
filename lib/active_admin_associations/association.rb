@@ -15,7 +15,7 @@ module ActiveAdminAssociations
     private
 
     def set_default_options
-      @options[:as] ||= name.to_s.classify.constantize.model_name.plural
+      @options[:as] ||= name.to_s.classify.constantize.model_name.plural.titleize
     end
     
   end

@@ -5,6 +5,7 @@ module ActiveAdminAssociations
 
     def has_many(name, options = {})
       config.associations << ActiveAdminAssociations::Association.new(name, options)
+
     end
 
     def association_items
