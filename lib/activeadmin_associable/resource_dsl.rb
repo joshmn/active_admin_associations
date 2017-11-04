@@ -7,9 +7,9 @@ module ActiveAdminAssociable
       config.associables << ActiveAdminAssociable::Associable.new(name, options)
     end
 
-    def association_items
+    def associable_menu(name, options = {})
       return nil if config.associables.empty?
-      resource_associations = config.associations
+      resource_associations = config.associables
       current_namespace = config.namespace.name
       config.add_action_item("Associates", :except => [:index, :new]) do
         dropdown_menu "Associates" do
